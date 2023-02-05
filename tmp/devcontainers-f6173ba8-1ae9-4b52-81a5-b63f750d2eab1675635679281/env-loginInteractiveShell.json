@@ -1,0 +1,9 @@
+{
+	"HOSTNAME": "013401e89269",
+	"REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-973eeac092b351ff1350503b653f50af02a88abd.sock\"]",
+	"REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-973eeac092b351ff1350503b653f50af02a88abd.sock",
+	"PATH": "/home/pintos/bin:/home/pintos/.local/bin:/pintos/utils:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+	"SHLVL": "1",
+	"HOME": "/home/pintos",
+	"_": "/bin/cat"
+}
