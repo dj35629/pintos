@@ -95,6 +95,37 @@ struct thread
 
     int64_t tiempo_dormido;
 
+/* My Code Begins */
+    /*
+     * This is for the priority scheduling.
+     */
+
+    /*
+     * hold_lock is for the lock related to thread.
+     * holder is for the current thread.
+     * wait_on_lock is for deal with the priority donation.
+     */
+    struct lock *wait_on_lock;
+
+    /*
+     * I use waiters in semaphore to control every threads related to lock,
+     * but it make control thread really difficult.
+     */
+    struct list donation_list;
+
+    /*
+     * for the elements in donation_list
+     */
+    struct list_elem donation_list_elem;
+
+    /*
+     * for thread_set_priority(), like a cach
+     */
+    int init_priority;
+    /* My Code Ends */
+
+
+
 #ifdef USERPROG
     /* Owned by userprog/process.c. */
     uint32_t *pagedir;                  /* Page directory. */
